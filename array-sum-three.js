@@ -1,5 +1,5 @@
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 23, 45, 12, 34, 65, 47, 87, 45];
-const target = 50;
+const target = 10;
 let found = false;
 let iteration = 1
 for (let i = 0; i < nums.length; i++) {

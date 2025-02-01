@@ -5,5 +5,5 @@ const a = {
     },
   };
   console.log(a == 5 || a == 9 || a == 9);
-  // the || operator only check the first value if it is true then it willl return true and if it is false so it will return false and cannot check the others value (short circutting)
+  // the || operator only check the first value if it is true then it will return true and if it is false so it will return false and cannot check the others value (short circutting)
 

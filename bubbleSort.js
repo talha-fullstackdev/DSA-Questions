@@ -81,7 +81,7 @@ const employees = [
     id: 6,
     name: "Sophia Wilson",
     position: "Frontend Developer",
-    salary: 72000,
+    salary: 7200008,
     department: "Development",
     hireDate: "2023-07-05",
     email: "sophia.wilson@example.com",
@@ -90,7 +90,7 @@ const employees = [
     id: 7,
     name: "David Lee",
     position: "Data Analyst",
-    salary: 70000,
+    salary: 7560000,
     department: "Analytics",
     hireDate: "2021-12-15",
     email: "david.lee@example.com",
@@ -108,7 +108,7 @@ const employees = [
     id: 9,
     name: "Chris Martin",
     position: "HR Manager",
-    salary: 78000,
+    salary: 786000,
     department: "Human Resources",
     hireDate: "2018-04-09",
     email: "chris.martin@example.com",
@@ -131,6 +131,7 @@ const bubbleSort = (employees) => {
         let temp = employees[i];
         employees[i] = employees[j];
         employees[j] = temp;
+
         // another method of swapping
         // [employees[i], employees[j]] = [employees[j], employees[i]];
       }
@@ -139,4 +140,6 @@ const bubbleSort = (employees) => {
   return employees;
 };
 let sorted = bubbleSort(employees);
+
 console.log(sorted);
+console.log("Employee with higher salary is",sorted[sorted.length-1].name , "and his salary is ", sorted[sorted.length-1].salary)
