@@ -1,4 +1,4 @@
-const array = [2,2,4,6,7,3];
+const array = [2,2,4,6,7,3,9,11,6,14,15,17,18];
 let even = 0;
 let odd = 0;
 for (let i = 0; i < array.length; i++) {
@@ -9,5 +9,5 @@ for (let i = 0; i < array.length; i++) {
     odd += 1;
   }
 }
-console.log(even)
-console.log(odd)
+console.log("even =",even)
+console.log("odd =",odd)
