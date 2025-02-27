@@ -38,12 +38,12 @@
 // };
 // let check = isSorted([2, 1]);
 // console.log(check);
-let array = [1,2,3,4,5,6,7,8];
+let array = [1, 2, 3, 4, 5, 6, 7, 8];
 let even = 0;
 let odd = 0;
-if(array.length==0){
-    console.log("empty array")
-    return
+if (array.length == 0) {
+  console.log("empty array");
+  return;
 }
 for (let i = 0; i < array.length; i++) {
   if (array[i] % 2 === 0) {

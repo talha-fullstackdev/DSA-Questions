@@ -4,7 +4,6 @@ class ListNode {
         this.next = null;
     }
 }
-
 function reverseLinkedList(head) {
     let prev = null;
     let current = head;
