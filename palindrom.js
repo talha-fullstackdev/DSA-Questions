@@ -30,8 +30,24 @@
 // const check = checkPalindrom(1241);
 // console.log(check);
 //////////////////practice
-const checkPalin = (input) => {
-  const string = input.toString();
+// const checkPalin = (input) => {
+//   const string = input.toString();
+//   let left = 0;
+//   let right = string.length - 1;
+//   while (left < right) {
+//     if (string[left] !== string[right]) {
+//       return "not palindrom";
+//     }
+//     left++;
+//     right--;
+//   }
+//   return "palindrom";
+// };
+// const check = checkPalin("aba");
+// console.log(check);
+
+const checkPalindrom = (input) => {
+  let string = input.toString();
   let left = 0;
   let right = string.length - 1;
   while (left < right) {
@@ -43,5 +59,5 @@ const checkPalin = (input) => {
   }
   return "palindrom";
 };
-const check = checkPalin("aba");
-console.log(check);
+const check = checkPalindrom("aaabaaa")
+console.log(check)
