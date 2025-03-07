@@ -43,9 +43,10 @@ const issorted = (array) => {
     if (array[i] < array[i - 1]) {
       ascending = false;
     }
+    return "No sequence found!"
   }
   if (ascending) return "sorted in assending order";
   if (decending) return "sorted in decending order order";
 };
-const check = issorted([]);
+const check = issorted([9,3,7,9]);
 console.log(check);
