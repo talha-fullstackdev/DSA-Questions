@@ -9,3 +9,4 @@
 // }
 // myFun()
 
+console.log("hello world")
