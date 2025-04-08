@@ -28,8 +28,8 @@
 // console.log(isSorted(descendingArray));
 
 const issorted = (array) => {
-  if(array.length===0){
-    return "array is empty"
+  if (array.length === 0) {
+    return "array is empty";
   }
   if (array.length < 2) {
     return "array is sorted";
@@ -43,10 +43,10 @@ const issorted = (array) => {
     if (array[i] < array[i - 1]) {
       ascending = false;
     }
-    return "No sequence found!"
+    return "No sequence found!";
   }
-  if (ascending) return "sorted in assending order";
-  if (decending) return "sorted in decending order order";
+  if (ascending) return "array is sorted in assending order";
+  if (decending) return "array is sorted in decending order order";
 };
-const check = issorted([9,3,7,9]);
+const check = issorted([9, 3, 7, 9]);
 console.log(check);
