@@ -52,13 +52,13 @@
 // };
 // fibonacci(1, 0);
 /////////////////practice
-let secondPrev = 0
-let firstPrev = 1
-console.log(secondPrev)
-console.log(firstPrev)
-for (let fib = 0 ; fib<=20; fib++){
-  let newFeb = secondPrev + firstPrev
-  secondPrev = firstPrev
-  firstPrev=newFeb
-  console.log(newFeb)
+let secondPrev = 0;
+let firstPrev = 1;
+console.log(secondPrev);
+console.log(firstPrev);
+for (let fib = 0; fib <= 20; fib++) {
+  let newFeb = secondPrev + firstPrev;
+  secondPrev = firstPrev;
+  firstPrev = newFeb;
+  console.log(newFeb);
 }
