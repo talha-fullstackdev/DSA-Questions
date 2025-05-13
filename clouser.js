@@ -12,6 +12,8 @@
 // console.log(user.getName()); // "Talha"
 // console.log(user.checkPassword("123456")); // true
 // console.log(user.checkPassword("wrong"));
+///////////////////////////////////////////
+// example
 const createUser = (name) => {
   let password = 123456;
   return {
