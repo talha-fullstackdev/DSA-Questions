@@ -3,7 +3,7 @@ create table employees (      --create table like this and insert values it is i
     name varchar(50),
     age int not null
 );
-insert into employees values(1,'talha',25); --insert values like this into table use single quotes with strings
+insert into employees values(1,'talha',25); --insert values like this into table 
 insert into employees values(2,'hamza',24);
 insert into employees (id, name, age) -- bu this we can insert multiples values at once in table
 values
