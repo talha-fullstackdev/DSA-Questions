@@ -37,16 +37,17 @@ const issorted = (array) => {
   let ascending = true;
   let decending = true;
   for (let i = 0; i < array.length; i++) {
-    if (array[i] > array[i - 1]) {
-      decending = false;
-    }
-    if (array[i] < array[i - 1]) {
+    if (array[i] > array[i + 1]) {
       ascending = false;
     }
-    return "No sequence found!";
+    if (array[i] < array[i + 1]) {
+      decending = false;
+    }
+  
   }
   if (ascending) return "array is sorted in assending order";
   if (decending) return "array is sorted in decending order order";
+  return "No sequence found!";
 };
-const check = issorted([9, 3, 7, 9]);
+const check = issorted([2,1]);
 console.log(check);

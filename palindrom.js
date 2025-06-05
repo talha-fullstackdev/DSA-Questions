@@ -67,7 +67,7 @@ const isPalindrom = (input) => {
   let left = 0;
   let right = string.length - 1;
   if (string.length === 0) {
-    return "please provide an input";
+    return "please provide an input!";
   }
   if (string.length === 1) {
     return "one char is always a palindrom";
