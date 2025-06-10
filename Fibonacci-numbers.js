@@ -62,3 +62,4 @@ for (let fib = 0; fib <= 20; fib++) {
   firstPrev = newFeb;
   console.log(newFeb);
 }
+/////////////
