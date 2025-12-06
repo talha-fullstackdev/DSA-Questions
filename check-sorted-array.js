@@ -51,3 +51,4 @@ const issorted = (array) => {
 };
 const check = issorted([2,1]);
 console.log(check);
+ 

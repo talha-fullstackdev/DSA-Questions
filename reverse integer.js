@@ -14,10 +14,10 @@
 /////////////////////////////////////
 let reverse = "";
 const reversedNum = (num) => {
-    let numStr = num.toString(); // Convert number to string
-    for (let i = numStr.length - 1; i >= 0; i--) {
-        reverse += numStr[i]; // Access characters from the string
-    }
-    console.log(reverse);
+  let numStr = num.toString(); // Convert number to string
+  for (let i = numStr.length - 1; i >= 0; i--) {
+    reverse += numStr[i]; // Access characters from the string
+  }
+  console.log(reverse);
 };
 reversedNum(23456);

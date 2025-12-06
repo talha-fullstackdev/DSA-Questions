@@ -140,6 +140,9 @@ const bubbleSort = (employees) => {
   return employees;
 };
 let sorted = bubbleSort(employees);
+// const sortedEmployees = employees.sort((a, b) => a.salary - b.salary); // built in method with less time complexity
 
 console.log(sorted);
+// console.log(sortedEmployees);
+
 console.log("Employee with higher salary is",sorted[sorted.length-1].name , "and his salary is ", sorted[sorted.length-1].salary)

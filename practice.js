@@ -38,19 +38,37 @@
 // };
 // let check = isSorted([2, 1]);
 // console.log(check);
-let array = [1, 2, 3, 4, 5, 6, 7, 8];
-let even = 0;
-let odd = 0;
-if (array.length == 0) {
-  console.log("empty array");
-  return;
-}
-for (let i = 0; i < array.length; i++) {
-  if (array[i] % 2 === 0) {
-    even += 1;
-  } else {
-    odd += 1;
+// let array = [1, 2, 3, 4, 5, 6, 7, 8];
+// let even = 0;
+// let odd = 0;
+// if (array.length == 0) {
+//   console.log("empty array");
+//   return;
+// }
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] % 2 === 0) {
+//     even += 1;
+//   } else {
+//     odd += 1;
+//   }
+// }
+// console.log(even, "evens");
+// console.log(odd, "odds");
+
+const SumPair = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] == array[j]) {
+        let sum = array[i] + array[j];
+        let data = {
+          pair: `${array[i]} and ${array[j]}}`,
+          result: sum,
+        };
+        array.push(data);
+      }
+    }
   }
-}
-console.log(even, "evens");
-console.log(odd, "odds");
+  return array;
+};
+const check = SumPair([1, 1, 2, 1, 3, 3, 4, 4, 5, 5]);
+console.log(check);
